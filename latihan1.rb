@@ -59,11 +59,11 @@ print ("insert brand : ")
 brand = gets
 
 # create new Car object
-mobilku = Car.new(model, brand, year)
-mobilku.printStats
+newCar = Car.new(model, brand, year)
+newCar.printStats
 
 # Call isOldtimer from Module
-if mobilku.isOldtimer?(year) == true
+if newCar.isOldtimer?(year) == true
     puts "Older than 30 years"
 else
     puts "Newer than 30 years"
